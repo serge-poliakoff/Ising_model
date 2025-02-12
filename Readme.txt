@@ -1,7 +1,9 @@
-К сожалению, после нескольких долгих ночей у меня так и не получилось скомпилировать программу. Возможно дело в том что устанавливал саму джаву через не будем говорить что, возможно из-за самой среды разработки.
-Таким образом, запустить приложенный код можно только в самом IDE Processing.
-Качается вот здесь https://processing.org/download бесплатный, сравнительно простой в управлении, в европе уже лет пять как на нем учат программировать детей в школе, у нас что-то пока малоизвестен.
-Из рекомендаций по запуску:
-1. Размер сетки изменяется переменными size_x size_y в файле player.pde, тут зависит от процессора, но у меня после 400х400 начинает   выдавать нестабильный fps, что не круто
-2. Если хочется запустить симуляцию с изначально полностью намагниченным материалам достаточно поменять третий парметр в конструкторе решетки:   grid = new Ising(size_x,size_y,(byte)1,T,1); или grid = new Ising(size_x,size_y,(byte)-1,T,1); соответственно
-3. И наверное самое главное: температура меняется нажатием кнопок S(вниз) и W(вверх), обратите внимание, что именно в английской раскладке
+The Ising model, is a mathematical model of ferromagnetism in statistical mechanics.
+The model consists of discrete variables that represent magnetic dipole moments of atomic "spins" that can be in one of two states (+1 or −1).
+Interacting with each other and pushed to chaotic changes by the heat energy, system, however tends to obtain the lowest energy state.
+Each frame programm uses combination of Monte-Carlo and Metropolis algorithmes to calculate the next state of model.
+The model allows the identification of phase transitions as a simplified model of reality. This happends near 2K of temperature.
+
+Execution:
+  Model starts with a random state at above-transition temperature.
+  In order to heat or freeze the model, click "w" and "s" buttons of the keybord respectively
