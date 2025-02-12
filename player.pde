@@ -10,7 +10,7 @@ void setup(){
   size(200,200);
   background(0);
   windowResize(size_x+80,size_y);
-  grid = new Ising(size_x,size_y,(byte)1,T,1);
+  grid = new Ising(size_x,size_y,(byte)0,T,1);
   grid.render();
   
   font = createFont("Times New Roman", 20, true);
