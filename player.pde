@@ -1,4 +1,4 @@
-int size_x = 250, size_y = 250;
+int size_x = 400, size_y = 400;
 Ising grid;
 float T = 2.02, deltaT = 0.1f;
 
@@ -7,7 +7,7 @@ boolean overButton = false;
 PFont font;
 
 void setup(){
-  size(200,200);
+  size(400,400);
   background(0);
   windowResize(size_x+80,size_y);
   grid = new Ising(size_x,size_y,(byte)0,T,1);
